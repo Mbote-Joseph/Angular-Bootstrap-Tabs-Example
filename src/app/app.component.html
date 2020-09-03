@@ -1,0 +1,64 @@
+<div class="container">
+      
+  <h1 style="color: violet">Angular Bootstrap Tabs Example </h1>
+    
+  <ngb-tabset [destroyOnHide]="false">
+    
+    <ngb-tab title="Basic Setting">
+      <ng-template ngbTabContent>
+        <p>
+                    In this step, we will install bootstrap core package. so we can use bootstrap css so let's install by following command:
+          <br>
+          npm install bootstrap --save
+          <br>
+          Now, we need to include bootstrap css like "node_modules/bootstrap/dist/css/bootstrap.min.css", so let's add it on angular.json file.
+          <br>
+          angular.json
+          <br>
+          ..... <br>
+              "styles": [<br>
+                "node_modules/bootstrap/dist/css/bootstrap.min.css",<br>
+                "src/styles.css"<br>
+              ],<br>
+          ..... <br>
+        </p>
+      </ng-template>
+    </ngb-tab>
+     
+    <ngb-tab>
+      <ng-template ngbTabTitle>Install Ng Bootstrap</ng-template>
+      <ng-template ngbTabContent>
+          <p>
+            In this step, we will install Ng Bootstrap package. so we can use bootstrap ui so let's install by following command:
+<br>
+npm install --save @ng-bootstrap/ng-bootstrap
+
+          </p>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle>Import Module</ng-template>
+      <ng-template ngbTabContent>
+          <p>
+            In this step, we need to import NgbModule to app.module.ts file. so let's import it as like bellow:
+<br>
+src/app/app.module.ts <br>
+
+import --NgbModule-- from '@ng-bootstrap/ng-bootstrap'; 
+
+          </p>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle> Updated View File</ng-template>
+      <ng-template ngbTabContent>
+          <p>
+            Now here, we will updated our html file. we will create simple bootstrap four types of tabs as like bellow.
+<br>
+so let's put bellow code: <br>
+<a href="https://www.itsolutionstuff.com/post/angular-8-bootstrap-tabs-exampleexample.html">Learning Material</a>
+          </p>
+      </ng-template>
+    </ngb-tab>
+    </ngb-tabset>
+    </div>
